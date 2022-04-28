@@ -30,9 +30,9 @@ bar chart of consumed food
 
 ### Samples
 
-![](my_plate_nutrition/screenshots/1.jpeg)
-![](my_plate_nutrition/screenshots/2.jpeg)
-![](my_plate_nutrition/screenshots/3.jpeg)
-![](my_plate_nutrition/screenshots/4.jpeg)
-![](my_plate_nutrition/screenshots/5.jpeg)
-![](my_plate_nutrition/screenshots/6.jpeg)
+![](screenshots/1.jpeg)
+![](screenshots/2.jpeg)
+![](screenshots/3.jpeg)
+![](screenshots/4.jpeg)
+![](screenshots/5.jpeg)
+![](screenshots/6.jpeg)

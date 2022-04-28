@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_sign_up"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".signup"
+android:orientation="vertical"
+android:background="#fff"
+android:padding="20dp">
+
+<ImageView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:src="@drawable/logo"
+    android:transitionName="logo_image"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Welcome"
+    android:textSize="40sp"
+    android:fontFamily="@font/bungee"
+    android:layout_marginTop="-40dp"
+    android:textColor="@color/black"
+    android:transitionName="logo_text"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="SignUp to start your new Journey !"
+    android:textSize="18sp" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Full Name"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        android:textColorHint="@color/black"
+        android:transitionName="user_trans">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_name"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/black"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Username"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        android:textColorHint="@color/black"
+        app:counterMaxLength="10" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_username"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/black"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        android:textColorHint="@color/black"
+        android:hint="Email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_email"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneNo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        android:textColorHint="@color/black"
+        android:hint="Phone no">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_phoneNo"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/black"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/black"
+        android:hint="Password"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        android:textColorHint="@color/black"
+        android:transitionName="password_trans">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/black"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="REGISTER"
+    android:textColor="@color/white"
+    android:backgroundTint="@android:color/black"
+    android:transitionName="button_trans"
+    android:id="@+id/sign_btn"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Already have an account? LogIn"
+    android:backgroundTint="#00000000"
+    android:textColor="@color/black"
+    android:transitionName="login_trans"
+    android:id="@+id/login_back"/>
+</LinearLayout>

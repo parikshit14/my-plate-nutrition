@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.huskies.developer.activities.ProfileActivity"
+    style="@style/background_style"
+    android:id="@+id/profile_main_view">
+    <RelativeLayout
+        style="@style/header_style">
+        <TextView
+            style="@style/header_text"
+            android:text = "@string/profile">
+        </TextView>
+
+        <Button
+            android:id="@+id/from_profile_to_menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/whiteback"></Button>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="50dp"
+                android:id="@+id/profile_table_layout">
+                <TableRow
+                    style="@style/table_row_profile_style">
+                    <TextView
+                        android:text="@string/sex"
+                        style="@style/first_text_in_row_profile_style"/>
+                    <RadioGroup
+                        android:orientation="horizontal"
+                        android:id="@+id/profile_radio_group">
+                        <RadioButton
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/male"
+                            android:checked="true"
+                            android:textColor="@color/my_text_color"
+                            android:id="@+id/profile_man_radio_button"
+                            android:onClick="onGenderRadioButtonClick"
+                            />
+                        <RadioButton
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/female"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/my_text_color"
+                            android:id="@+id/profile_woman_radio_button"
+                            android:onClick="onGenderRadioButtonClick"/>
+                    </RadioGroup>
+                </TableRow>
+                <TableRow
+                    style="@style/table_row_profile_style">
+                    <TextView
+                        android:text="@string/growth"
+                        style="@style/first_text_in_row_profile_style"/>
+                    <EditText
+                        android:id="@+id/profile_height"
+                        tools:text="175"
+                        android:inputType="number"
+                        android:onClick="onHeightChangeButtonClick"
+                        android:textColor="@color/my_text_color"/>
+                    <TextView
+                        android:text="@string/centimeters"
+                        android:textColor="@color/my_text_color"/>
+                </TableRow>
+                <TableRow
+                    style="@style/table_row_profile_style">
+                    <TextView
+                        android:text="@string/weight"
+                        style="@style/first_text_in_row_profile_style"/>
+                    <EditText
+                        android:id="@+id/profile_weight"
+                        tools:text="70"
+                        android:onClick="onWeightChangeButtonClick"
+                        style="@style/edit_text_profile_style"/>
+                    <TextView
+                        android:text="@string/kilograms"
+                        android:textColor="@color/my_text_color"/>
+                </TableRow>
+                <TableRow
+                    style="@style/table_row_profile_style" >
+                    <TextView
+                        android:text="@string/age"
+                        style="@style/first_text_in_row_profile_style"/>
+                    <EditText
+                        android:id="@+id/profile_age"
+                        tools:text="18"
+                        android:onClick="onAgeChangeButtonClick"
+                        style="@style/edit_text_profile_style"/>
+                    <TextView
+                        android:text="@string/years"
+                        android:textColor="@color/my_text_color"/>
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/profile_optimal_kal"
+                style="@style/first_text_in_row_profile_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_table_layout"
+                android:paddingTop="40dp"
+                android:text="@string/daily_calorie_amount" />
+
+            <TextView
+                android:id="@+id/profile_optimal_kal_number"
+                style="@style/first_text_in_row_profile_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_optimal_kal"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text=" Cal"
+                android:textStyle="bold" />
+            <TextView
+                style="@style/first_text_in_row_profile_style"
+                android:id="@+id/profile_aim_kal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_optimal_kal_number"
+                android:text="@string/calories_goal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_aim_kal"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/profile_aim_kal_number"
+                    style="@style/first_text_in_row_profile_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:inputType="number"
+                    android:onClick="onAimCalorieChangeButtonClick"
+                    android:paddingStart="0dp"
+                    android:paddingLeft="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingRight="0dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/first_text_in_row_profile_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="0dp"
+                    android:paddingLeft="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingRight="0dp"
+                    android:text=" Cal"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/background_style"
+    tools:context="com.huskies.developer.activities.StatisticActivity">
+    <RelativeLayout
+        style="@style/header_style">
+        <TextView
+            style="@style/header_text"
+            android:text = "@string/statistic">
+        </TextView>
+
+        <Button
+            android:id="@+id/from_statistic_to_menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/whiteback"></Button>
+    </RelativeLayout>
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/statistic_histogram">
+    </com.github.mikephil.charting.charts.BarChart>
+</LinearLayout>

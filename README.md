@@ -5,7 +5,7 @@ It is a nutrition tracker app(android application), helps to keep track of your 
 
 Just click a picture of food item and our ML algorithm will scan the food item and pull in the calorie count. And give you entire day nutrition consumption. Or you can just select/add food item manually based on the need*.
 
-Flow chart:
+**Flow chart:**
 
 ![flow-chart-final-year-project (2)](https://user-images.githubusercontent.com/54709254/166936701-31145c20-d06f-4916-a33f-d733e75c340f.jpg)
 

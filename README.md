@@ -46,5 +46,5 @@ bar chart of consumed food
 
 
 <h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> <p align="left"> <a href="https://docs.microsoft.com/en-us/azure/machine-learning/" target="_blank" rel="noreferrer"> <img src="https://user-images.githubusercontent.com/54709490/167131829-53774bf6-8846-489a-aed3-52f724a43694.png" alt="android" width="40" height="40"/>
+<p align="left"> <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> <a href="https://docs.microsoft.com/en-us/azure/machine-learning/" target="_blank" rel="noreferrer"> <img src="https://user-images.githubusercontent.com/54709490/167131829-53774bf6-8846-489a-aed3-52f724a43694.png" alt="android" width="40" height="40"/>
 

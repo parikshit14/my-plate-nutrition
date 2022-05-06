@@ -34,7 +34,7 @@ Just click a picture of food item and our ML algorithm will scan the food item a
 
 ### Statistics
 
-bar chart of consumed food
+:bar_chart: : Bar chart of consumed food
 
 ### Samples
 <img src="screenshots/1.jpeg" width="250" height="500">  &nbsp; &nbsp;  <img src="screenshots/2.jpeg" width="250" height="500">  &nbsp; &nbsp; <img src="screenshots/3.jpeg" width="250" height="500">   
